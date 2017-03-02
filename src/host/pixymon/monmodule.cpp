@@ -16,6 +16,7 @@
 #include <stdio.h>
 #include <stdarg.h>
 #include <QMutexLocker>
+#include <QVariant>
 #include "monmodule.h"
 #include "parameters.h"
 #include "interpreter.h"
