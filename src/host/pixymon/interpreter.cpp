@@ -225,7 +225,7 @@ QStringList Interpreter::getSections(const QString &id, const QString &string)
     for (i=1; true; i++)
     {
         section = string.section('@', i, i, QString::SectionIncludeLeadingSep);
-        if (section=="@")
+        if (section=="@" || section=="")
             break;
         words = section.split(QRegExp("\\s+"));
         if (words[0].contains(id))
